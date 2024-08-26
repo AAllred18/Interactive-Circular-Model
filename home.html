@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Quadrant Circle Buttons</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+
+  <div class="groupContainer">
+    <div class="header"> 
+      <h1>THE CHRIST-CENTERED LEADER</h1>
+    </div>
+      
+    <div class="row">
+      <div class="column">
+        <!-- <h2>Model Goes Here</h2> -->
+        <div class="overallContainer"> 
+          <div class="modelContainer">
+              <div class="center-circle">
+                  <div class="center-text">CHRIST-CENTERED LEADER</div>
+              </div>
+              <div class="principle-circle main">
+                  <!-- ENTER ROTATING TEXT CODE HERE -->
+                  <svg id="rotatingText" viewBox="15 15 170 170" width="300" height="300">
+                    <defs>
+                      <!-- Readable Top -->
+                      <path id="curve" d="M 90, 100
+                        m -58, 0
+                        a 60, 60 0 1, 1 135, 0
+                        a 60, 60 0 1, 1 -135, 0">
+                      </path>
+                      <!-- Readable Bottom -->
+                      <!-- <path id="curve" d="M 100, 100
+                              m -75, 0
+                              a 75, 75 0 1, 0 150, 0
+                              a 75, 75 0 1, 0 -150, 0
+                              ">
+                      </path> -->
+                    </defs>
+                      <text width="00">
+                        <textPath href="#curve" id="myTextPath" class="text1">  
+                          — EXPRESS LOVE — HONOR AGENCY — INVITE ACCOUNTABILITY
+                        </textPath>
+                      </text>
+                  </svg>
+              </div>
+              <div class="quadrant top" id="q1">
+                  <div class="text">GOD</div>
+              </div>
+              <div class="quadrant right" id="q2">
+                  <div class="text">GOD'S CHILRDREN</div>
+              </div>
+              <div class="quadrant bottom" id="q3">
+                  <div class="text">SELF</div>
+              </div>
+              <div class="quadrant left" id="q4">
+                  <div class="text">STEWARDSHIP</div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+          <div class="btn-group buttonContainer">
+            <!-- GOD OPTION -->
+            <button class="menuOptions fadeInButton" data-target="#contentGod">GOD</button>
+            <div class="content" id="contentGod" style="display:none">
+              <h3 id="contentGod" class="title">GOD</h3>
+              <div class="mainDescrip">
+              The first great commandment is to love God (Matt 22:37-39).
+              As Christ-centered leaders, we do this by coming unto Christ, letting God prevail in our lives, keeping His commandments, and building a solid foundation on His eternal truths as revealed in scripture and through living prophets. 
+              We access God’s power by making and keeping covenants with Him. We learn to trust Him, to prayerfully seek inspiration, and to be guided by the Holy Ghost. 
+              We cherish the gift of repentance, serve His children, and consecrate our talents to His work (Jacob 4:10; 2 Nephi 10:23-24; Alma 37:37; Moses 1:39).
+              </div>
+
+              <!-- HIDDEN CONTENT FOR BUTTONS -->
+              <!-- #Content God - Love -->
+              <div class="content1" id="contentGod_Love" style="display:none;">
+                <h4 id="contentGod" class="title1">Express Love For God</h4>
+                <p class="header1">As a Christ-Centered Leader, I…</p>
+                <ul>  
+                  <li class="listItems">Gratefully recognize His hand in my life  </li>
+                  <li class="listItems">Hear Him as I pray and study the word of God</li>
+                  <li class="listItems">Keep His commandments</li>
+                </ul>
+                <button class="fadeOutSection1Button backButton" data-target="#contentGod_Love">Back</button>
+              </div>
+              <!-- #Content God - Accountability -->
+              <div class="content2" id="contentGod_Account" style="display:none;">
+                <h4 id="contentGod" class="title1">Invite Accountability From God</h4>
+                <p class="header1">As a Christ-Centered Leader, I…</p>
+                <ul>
+                  <li class="listItems">Make and keep covenants with God</li>
+                  <li class="listItems">Repent and nurture Christlike attributes</li>
+                  <li class="listItems">Trust God to bless my efforts</li>
+                </ul>
+                <button class="fadeOutSection2Button backButton" data-target="#contentGod_Account">Back</button>
+              </div>
+              <!-- #Content God - Agency -->
+              <div class="content3" id="contentGod_Agency" style="display:none;">
+                <h4 id="contentGod" class="title1">Honor God’s Agency</h4>
+                <p class="header1">As a Christ-Centered Leader, I…</p>
+                <ul>
+                  <li class="listItems">Seek the Holy Ghost to understand God's will </li>
+                  <li class="listItems">Let God prevail; submit to His will and timing</li>
+                  <li class="listItems">Accept the Savior’s grace</li>
+                </ul>
+                <button class="fadeOutSection3Button backButton" data-target="#contentGod_Agency">Back</button>
+              </div>
+
+              <!-- SECTION BUTTONS ALIGNED ON BOTTOM -->
+              <div class="btn-group-2">
+                <!-- #Fade in God - Love -->
+                <button class="fadeInSection1Button" data-target="#contentGod_Love">Express Love</button>
+                <!-- #Fade in God - Accountability -->
+                <button class="fadeInSection2Button" data-target="#contentGod_Account">Invite Accountability</button>
+                <!-- #Fade in God - Agency -->
+                <button class="fadeInSection3Button" data-target="#contentGod_Agency">Honor Agency</button>
+              </div>
+              <button class="fadeOutButton backButton" data-target="#contentGod">Home</button>
+            </div>
+          <div class="lineDivider"></div>
+
+          <!-- GOD'S CHILDREN OPTION -->
+          <button class="menuOptions fadeInButton" data-target="#contentChildren">GOD’S CHILDREN</button>
+            <div class="content" id="contentChildren" style="display:none">
+              <h3 id="contentChildren" class="title">GOD'S CHILDREN</h3>
+              <div class="mainDescrip">
+              Christ-centered leaders inspire, nurture, and communicate in a way that teaches eternal truths and helps others flourish. 
+              We develop charity, love, empathy, meekness, discernment, and compassion in our service to all while honoring agency and inviting accountability. 
+              We empower and serve others, counsel together, find common ground, and create belonging to accomplish shared goals. This follows the second great commandment to “…love thy neighbor as thyself” exemplified by the Savior (e.g., Matthew 22:39; Doctrine and Covenants 121; 1 Corinthians 12).
+              </div>
+
+              <!-- HIDDEN CONTENT FOR BUTTONS -->
+              <!-- #Content Children - Love -->
+              <div class="content1" id="contentChildren_Love" style="display:none;">
+                <h4 id="contentGod" class="title1">Express Love For Others</h4>
+                <p class="header1">As a Christ-Centered Leader, I…</p>
+                <ul>  
+                  <li class="listItems">Serve and develop charity for the people I lead</li>
+                  <li class="listItems">Treat each individual as a person of infinite worth</li>
+                  <li class="listItems">Listen intently and demonstrate empathy</li>
+                </ul>
+                <button class="fadeOutSection1Button backButton" data-target="#contentChildren_Love">Back</button>
+              </div>
+              <!-- #Content God - Accountability -->
+              <div class="content2" id="contentChildren_Account" style="display:none;">
+                <h4 id="contentGod" class="title1">Invite Others' Accountability</h4>
+                <p class="header1">As a Christ-Centered Leader, I…</p>
+                <ul>
+                  <li class="listItems">Provide clear expectations and resources</li>
+                  <li class="listItems">Recognize and celebrate growth </li>
+                  <li class="listItems">Correct with directness, precision and compassion </li>
+                </ul>
+                <button class="fadeOutSection2Button backButton" data-target="#contentChildren_Account">Back</button>
+              </div>
+              <!-- #Content God - Agency -->
+              <div class="content3" id="contentChildren_Agency" style="display:none;">
+                <h4 id="contentGod" class="title1">Honor Others' Agency</h4>
+                <p class="header1">As a Christ-Centered Leader, I…</p>
+                <ul>
+                  <li class="listItems">Persuade with meekness, not compulsion</li>
+                  <li class="listItems">Free people to pursue initiatives and relationships</li>
+                  <li class="listItems">Embrace differences in background and perspective</li>
+                </ul>
+                <button class="fadeOutSection3Button backButton" data-target="#contentChildren_Agency">Back</button>
+              </div>
+
+              <!-- SECTION BUTTONS ALIGNED ON BOTTOM -->
+              <div class="btn-group-2">
+                <!-- #Fade in Children - Love -->
+                <button class="fadeInSection1Button" data-target="#contentChildren_Love">Express Love</button>
+                <!-- #Fade in Children - Accountability -->
+                <button class="fadeInSection2Button" data-target="#contentChildren_Account">Invite Accountability</button>
+                <!-- #Fade in Children - Agency -->
+                <button class="fadeInSection3Button" data-target="#contentChildren_Agency">Honor Agency</button>
+              </div>
+              <button class="fadeOutButton backButton" data-target="#contentChildren">Home</button>
+            </div>
+          <div class="lineDivider"></div>
+
+          <!-- SELF OPTION -->
+          <button class="menuOptions fadeInButton" data-target="#contentSelf">SELF</button>
+            <div class="content" id="contentSelf" style="display:none">
+              <h3 id="contentSelf" class="title">SELF</h3>
+              <div class="mainDescrip">
+                As children of God, we have unique spiritual gifts and an eternal potential for growth. As Christ-centered leaders, we strive to discover and develop our distinct talents and seek the gifts of the Spirit. 
+              We welcome feedback to understand our weaknesses, and exercise faith in the Savior’s grace to make them into strengths (e.g., Ether 12:27; Moroni 10; 1 Corinthians 12). 
+              Although we all fall short of the Savior’s perfect example, we strive to develop Christlike attributes, such as integrity, humility, meekness, gratitude, perseverance, and faith. As we develop our distinct gifts, seek continual improvement, and root out biases, we become equipped to lead in a way that is particular to us individually, and consistent with God’s commandments and our divine potential.
+              </div>
+
+            <!-- HIDDEN CONTENT FOR BUTTONS -->
+              <!-- #Content Self - Love -->
+              <div class="content1" id="contentSelf_Love" style="display:none;">
+                <h4 id="contentSelf" class="title1">Express Love For Myself</h4>
+                <p class="header1">As a Christ-Centered Leader, I…</p>
+                <ul>  
+                  <li class="listItems">Embrace my identity as a child of God </li>
+                  <li class="listItems">Discover and develop my spiritual gifts </li>
+                  <li class="listItems">Exercise patience and accept the Savior’s grace</li>
+                </ul>
+                <button class="fadeOutSection1Button backButton" data-target="#contentSelf_Love">Back</button>
+              </div>
+              <!-- #Content Self - Accountability -->
+              <div class="content2" id="contentSelf_Account" style="display:none;">
+                <h4 id="contentSelf" class="title1">Invite My Own Accountability</h4>
+                <p class="header1">As a Christ-Centered Leader, I…</p>
+                <ul>
+                  <li class="listItems">Exercise discipline and self-reliance</li>
+                  <li class="listItems">Take responsibility for my actions</li>
+                  <li class="listItems">Initiate positive change </li>
+                </ul>
+                <button class="fadeOutSection2Button backButton" data-target="#contentSelf_Account">Back</button>
+              </div>
+              <!-- #Content God - Agency -->
+              <div class="content3" id="contentSelf_Agency" style="display:none;">
+                <h4 id="contentSelf" class="title1">Honor My Agency</h4>
+                <p class="header1">As a Christ-Centered Leader, I…</p>
+                <ul>
+                  <li class="listItems">Set and pursue goals for eternal growth </li>
+                  <li class="listItems">Articulate and enact my personal values</li>
+                  <li class="listItems"> Seek to identify and pursue my calling in life</li>
+                </ul>
+                <button class="fadeOutSection3Button backButton" data-target="#contentSelf_Agency">Back</button>
+              </div>
+
+              <!-- SECTION BUTTONS ALIGNED ON BOTTOM -->
+              <div class="btn-group-2">
+                <!-- #Fade in God - Love -->
+                <button class="fadeInSection1Button" data-target="#contentSelf_Love">Express Love</button>
+                <!-- #Fade in God - Accountability -->
+                <button class="fadeInSection2Button" data-target="#contentSelf_Account">Invite Accountability</button>
+                <!-- #Fade in God - Agency -->
+                <button class="fadeInSection3Button" data-target="#contentSelf_Agency">Honor Agency</button>
+              </div>
+              <button class="fadeOutButton backButton" data-target="#contentSelf">Home</button>
+            </div>
+
+          <div class="lineDivider"></div>
+
+
+          <!-- STEWARDSHIPS OPTION -->
+          <button class="menuOptions fadeInButton" data-target="#contentStewardships">STEWARDSHIP</button>
+            <div class="content" id="contentStewardships" style="display:none">
+              <h3 id="contentStewardships" class="title">STEWARDSHIP</h3>
+              <div class="mainDescrip">
+              As Christ-centered leaders, we have stewardships that may involve formal or informal responsibilities in various organizations such as our families, congregations, schools, communities, and jobs. 
+              When we understand the opportunities, expectations, constraints, and demands of our work, we can direct our actions toward righteous goals (Doctrine and Covenants 4). We prepare by developing essential knowledge, skills, and attitudes (Doctrine and Covenants 88:118). 
+              Preparation increases capacity and instills courage and confidence to lead when challenging circumstances arise (Doctrine and Covenants 38:30). We find purpose and meaning as we consecrate our capabilities and gifts within our stewardships.
+            </div>
+
+            <!-- HIDDEN CONTENT FOR BUTTONS -->
+              <!-- #Content Stewardships - Love -->
+              <div class="content1" id="contentStewardships_Love" style="display:none;">
+                <h4 id="contentStewardships" class="title1">Express Love In My Stewardship</h4>
+                <p class="header1">As a Christ-Centered Leader, I…</p>
+                <ul>  
+                  <li class="listItems">Demonstrate commitment and conscientiousness</li>
+                  <li class="listItems">Foster a culture of love, belonging and respect</li>
+                  <li class="listItems">Exercise wisdom in using resources I am entrusted with</li>
+                </ul>
+                <button class="fadeOutSection1Button backButton" data-target="#contentStewardships_Love">Back</button>
+              </div>
+              <!-- #Content Stewardships - Accountability -->
+              <div class="content2" id="contentStewardships_Account" style="display:none;">
+                <h4 id="contentStewardships" class="title1">Invite Accountability In My Stewardship</h4>
+                <p class="header1">As a Christ-Centered Leader, I…</p>
+                <ul>
+                  <li class="listItems">Insist on personal accountability for my stewardship</li>
+                  <li class="listItems">Teach responsibility, transparency and integrity</li>
+                  <li class="listItems">Measure and multiply the group’s positive impact</li>
+                </ul>
+                <button class="fadeOutSection2Button backButton" data-target="#contentStewardships_Account">Back</button>
+              </div>
+              <!-- #Content Stewardships - Agency -->
+              <div class="content3" id="contentStewardships_Agency" style="display:none;">
+                <h4 id="contentStewardships" class="title1">Honor Agency In My Stewardship</h4>
+                <p class="header1">As a Christ-Centered Leader, I…</p>
+                <ul>
+                  <li class="listItems">Value the opinions of the group</li>
+                  <li class="listItems">Foster a culture of initiative and innovation</li>
+                  <li class="listItems">Focus resources on developing people</li>
+                </ul>
+                <button class="fadeOutSection3Button backButton" data-target="#contentStewardships_Agency">Back</button>
+              </div>
+
+              <!-- SECTION BUTTONS ALIGNED ON BOTTOM -->
+              <div class="btn-group-2">
+                <!-- #Fade in God - Love -->
+                <button class="fadeInSection1Button" data-target="#contentStewardships_Love">Express Love</button>
+                <!-- #Fade in God - Accountability -->
+                <button class="fadeInSection2Button" data-target="#contentStewardships_Account">Invite Accountability</button>
+                <!-- #Fade in God - Agency -->
+                <button class="fadeInSection3Button" data-target="#contentStewardships_Agency">Honor Agency</button>
+              </div>
+              <button class="fadeOutButton backButton" data-target="#contentStewardships">Home</button>
+            </div>
+
+            </div>
+        </div>
+          <!-- Closes Button Container     -->
+          </div>
+      <!-- Closes Column     -->
+      </div>
+    <!-- Closes Row     -->
+	<!-- </div>     -->
+    
+  <!-- Closes Group Container     -->
+	<!-- </div>   -->
+  
+
+<script>
+    // FUNCTIONS FOR USING BUTTONS
+
+// Function to open and close text through buttons
+$(document).ready(function(){
+    // Function to handle fade in
+    function fadeInContent(selector) {
+        $(selector).delay(10).fadeIn(500);
+    }
+    // Function to handle fade out
+    function fadeOutContent(selector) {
+        $(selector).delay(10).fadeOut(500);
+    }
+    // Function to handle Quick fade out
+    function fadeOutQuick (selector) {
+        $(selector).fadeOut(10);
+    }
+
+    const path1 ="M 90, 100 m -58, 0 a 60, 60 0 1, 1 135, 0 a 60, 60 0 1, 1 -135, 0";
+    const path2 ="M 100, 100 m -75, 0 a 75, 75 0 1, 0 150, 0 a 75, 75 0 1, 0 -150, 0";
+    const class1 = "text1";
+    const class2 = "text2";
+    let currentPath = 1;
+    let currentClass = 1;
+
+    function switchPath() {
+        const pathElement = document.getElementById('curve');
+        const textPathElement = document.getElementById('myTextPath');
+
+        if (currentPath === 1) {
+            pathElement.setAttribute('d', path2);
+            textPathElement.setAttribute('href', '#curve');
+            textPathElement.setAttribute('class', class2);
+            currentClass = class2;
+            currentPath = 2;
+        } else {
+            pathElement.setAttribute('d', path1);
+            textPathElement.setAttribute('href', '#curve');
+            textPathElement.setAttribute('class', class1);
+            currentClass = class1;
+            currentPath = 1;
+        }
+    }
+
+    function moveQuadrantOut(selector) {
+        if (selector === '#contentGod') {
+            const quadrant = document.getElementById('q1');
+            quadrant.classList.add('quadrant-move-q1');
+            quadrant.classList.remove('quadrant-home');
+        } else if (selector === '#contentChildren') {
+            const quadrant = document.getElementById('q2');
+            quadrant.classList.add('quadrant-move-q2');
+            quadrant.classList.remove('quadrant-home');
+        } else if (selector === '#contentSelf') {
+            // SPECIAL SECTION - FLIP TEXT
+            switchPath();
+            const quadrant = document.getElementById('q3');
+            quadrant.classList.add('quadrant-move-q3');
+            quadrant.classList.remove('quadrant-home');
+        } else if (selector === '#contentStewardships') {
+            const quadrant = document.getElementById('q4');
+            quadrant.classList.add('quadrant-move-q4');
+            quadrant.classList.remove('quadrant-home');
+        }
+    }
+
+    function moveQuadrantHome(selector) {
+        if (selector === '#contentGod') {
+            const quadrant = document.getElementById('q1');
+            quadrant.classList.remove('quadrant-move-q1');
+            quadrant.classList.add('quadrant-home');
+        } else if (selector === '#contentChildren') {
+            const quadrant = document.getElementById('q2');
+            quadrant.classList.remove('quadrant-move-q2');
+            quadrant.classList.add('quadrant-home');
+        } else if (selector === '#contentSelf') {
+            // SPECIAL SECTION - FLIP TEXT
+            switchPath();
+            const quadrant = document.getElementById('q3');
+            quadrant.classList.remove('quadrant-move-q3');
+            quadrant.classList.add('quadrant-home');
+        } else if (selector === '#contentStewardships') {
+            const quadrant = document.getElementById('q4');
+            quadrant.classList.remove('quadrant-move-q4');
+            quadrant.classList.add('quadrant-home');
+        }
+    }
+
+    var rotatingText = document.getElementById('rotatingText');
+    var isRotating = true;
+    var currentAngle;
+
+    //Function to pause rotation to gain its specific location
+    function pauseRotation() {
+        var computedStyle = window.getComputedStyle(rotatingText);
+        var matrix = computedStyle.transform;
+        if (matrix !== 'none') {
+            var values = matrix.split('(')[1].split(')')[0].split(',');
+            var a = values[0];
+            var b = values[1];
+            currentAngle = Math.round(Math.atan2(b, a) * (180 / Math.PI));
+            if (currentAngle < 0) {
+                currentAngle += 360;
+            }
+        }
+        rotatingText.style.transform = 'rotate(' + currentAngle + 'deg)';
+        rotatingText.style.animation = 'none';
+        isRotating = false;
+    }
+    // Function to stop the rotation at a specific location
+    function stopRotation(selector) {
+        pauseRotation();
+        // Get the current computed style of the rotating text
+        var computedStyle = window.getComputedStyle(rotatingText);
+        // Extract the current rotation angle in degrees
+        var matrix = computedStyle.transform;
+        if (matrix !== 'none') {
+            var values = matrix.split('(')[1].split(')')[0].split(',');
+            var a = values[0];
+            var b = values[1];
+            currentAngle = Math.round(Math.atan2(b, a) * (180 / Math.PI));
+            if (currentAngle < 0) {
+                currentAngle += 360;
+            }
+        }
+        rotatingText.style.transform = 'rotate(' + currentAngle + 'deg)';
+        // Snap to a specific location (e.g., 90 degrees)
+        if (selector === '#contentGod_Love') {
+            var selectedAngle = -10;
+        } else if (selector === '#contentGod_Account') {
+            var selectedAngle = 120;
+        } else if (selector === '#contentGod_Agency') {
+            var selectedAngle = 250;
+        } else if (selector === '#contentChildren_Love') {
+            var selectedAngle = 80;
+        } else if (selector === '#contentChildren_Account') {
+            var selectedAngle = 210;
+        } else if (selector === '#contentChildren_Agency') {
+            var selectedAngle = -20;
+        } else if (selector === '#contentSelf_Love') {
+            var selectedAngle = -80;
+        } else if (selector === '#contentSelf_Account') {
+            var selectedAngle = 150;
+        } else if (selector === '#contentSelf_Agency') {
+            var selectedAngle = 20;
+        } else if (selector === '#contentStewardships_Love') {
+            var selectedAngle = -100;
+        } else if (selector === '#contentStewardships_Account') {
+            var selectedAngle = 30;
+        } else if (selector === '#contentStewardships_Agency') {
+            var selectedAngle = 160;
+        }
+
+        var targetAngle = selectedAngle;
+        var rotationAmount = targetAngle - currentAngle;
+        // Apply the final rotation angle as an inline style
+        rotatingText.style.transform = 'rotate(' + (currentAngle + rotationAmount) + 'deg)';
+        // Stop the animation
+        rotatingText.style.animation = 'none';
+        isRotating = false;
+    }
+
+    // Function to start the rotation
+    function startRotation() {
+        pauseRotation()
+        rotatingText.style.animation = 'none'; // Reset any ongoing animation
+        rotatingText.offsetHeight; // Trigger reflow
+        rotatingText.style.transform = 'rotate(' + currentAngle + 'deg)'; // Set current angle
+        rotatingText.style.animation = 'rotate-circle 25s linear infinite';
+        // Adjust the animation's starting point based on the current angle
+        rotatingText.style.animation = 'rotate-circle 25s linear infinite';
+        rotatingText.style.animationDelay = '-' + (currentAngle / 360 * 25) + 's';
+        //Resume the animation 
+        isRotating = true;
+    }
+
+    // Event binding for fade in buttons
+    $('.fadeInButton').click(function(){
+        var target = $(this).data('target');
+        //Reveal Header
+        const revealHeader = document.querySelectorAll('h3');
+        fadeInContent(revealHeader);
+        //Hide Dividers and Home Button
+        const hideDividers = document.querySelectorAll('.lineDivider');
+        fadeOutQuick(hideDividers);
+        const hideHomeButtons = document.querySelectorAll('.fadeInButton');
+        fadeOutQuick(hideHomeButtons);
+        //Reveal Main Description 
+        fadeInContent(target);
+        //Move out Quadrant
+        moveQuadrantOut(target);
+    });
+    // Event binding for fade out buttons
+    $('.fadeOutButton').click(function(){
+        var target = $(this).data('target');
+        //Hide Subcontent
+        const hideSubContent1 = document.querySelectorAll('.content1');
+        fadeOutContent(hideSubContent1);
+        const hideSubContent2 = document.querySelectorAll('.content2');
+        fadeOutContent(hideSubContent2);
+        const hideSubContent3 = document.querySelectorAll('.content3');
+        fadeOutContent(hideSubContent3);
+        //Reveal Dividers and Home Buttons
+        const revealDividers = document.querySelectorAll('.lineDivider');
+        revealDividers.forEach(element => {
+            $(element).delay(550).fadeIn(200)
+        });
+        const revealHomeButtons = document.querySelectorAll('.fadeInButton');
+        revealHomeButtons.forEach(element => {
+            $(element).delay(550).fadeIn(200)
+        });
+        //Bring back main content
+        const revealMainContent = document.querySelectorAll('.mainDescrip');
+        revealMainContent.forEach(element => {
+            $(element).delay(600).fadeIn(10)
+        });
+        fadeOutContent(target);
+        //Move in Quadrant to home position
+        moveQuadrantHome(target)
+        startRotation()
+    });
+
+    //FADE IN CONTENT FOR SUBSECTIONS
+    $('.fadeInSection1Button').click(function(){
+        var target = $(this).data('target');
+        //Hide Header
+        const hideHeader = document.querySelectorAll('h3');
+        fadeOutQuick(hideHeader);
+        //Hide Main Descrip
+        const hideHomeDescrip = document.querySelectorAll('.mainDescrip');
+        fadeOutQuick(hideHomeDescrip);
+        //Hide other Content
+        const hideSubContent2 = document.querySelectorAll('.content2');
+        fadeOutQuick(hideSubContent2);
+        const hideSubContent3 = document.querySelectorAll('.content3');
+        fadeOutQuick(hideSubContent3);
+        //Readjust buttons
+        const hideSubButton = document.querySelectorAll('.sectionsButton');
+        fadeOutQuick(hideSubButton);
+        fadeInContent(hideSubButton);  
+        //Reveal Content 1
+        fadeInContent(target);  
+        stopRotation(target)
+    });
+    $('.fadeInSection2Button').click(function(){
+        var target = $(this).data('target');
+        //Hide Header
+        const hideHeader = document.querySelectorAll('h3');
+        fadeOutQuick(hideHeader);
+        //Hide Main Descrip
+        const hideHomeDescrip = document.querySelectorAll('.mainDescrip');
+        fadeOutQuick(hideHomeDescrip);
+        //Hide other Content
+        const hideSubContent1 = document.querySelectorAll('.content1');
+        fadeOutQuick(hideSubContent1);
+        const hideSubContent3 = document.querySelectorAll('.content3');
+        fadeOutQuick(hideSubContent3);
+        //Readjust buttons
+        const hideSubButton = document.querySelectorAll('.sectionsButton');
+        fadeOutQuick(hideSubButton);
+        fadeInContent(hideSubButton);  
+        //Reveal Content 2
+        fadeInContent(target);  
+        stopRotation(target)
+    });
+    $('.fadeInSection3Button').click(function(){
+        var target = $(this).data('target');
+        //Hide Header
+        const hideHeader = document.querySelectorAll('h3');
+        fadeOutQuick(hideHeader);
+        //Hide Main Descrip
+        const hideHomeDescrip = document.querySelectorAll('.mainDescrip');
+        fadeOutQuick(hideHomeDescrip);
+        //Hide other Content
+        const hideSubContent1 = document.querySelectorAll('.content1');
+        fadeOutQuick(hideSubContent1);
+        const hideSubContent2 = document.querySelectorAll('.content2');
+        fadeOutQuick(hideSubContent2);
+        //Readjust buttons
+        const hideSubButton = document.querySelectorAll('.sectionsButton');
+        fadeOutQuick(hideSubButton);
+        fadeInContent(hideSubButton);  
+        //Reveal Content 3
+        fadeInContent(target);   
+        stopRotation(target)
+    });
+
+    // FADE OUT CONTENT FOR SUB SECTIONS
+    $('.fadeOutSection1Button').click(function(){
+        var target = $(this).data('target');
+        //Reveal Header
+        const revealHeader = document.querySelectorAll('h3');
+        fadeInContent(revealHeader);
+        //Reveal Main Descrip
+        const revealHomeDescrip = document.querySelectorAll('.mainDescrip');
+        fadeInContent(revealHomeDescrip);
+        //Fade In and Out SubButtons
+        const hideSubButton = document.querySelectorAll('.sectionsButton');
+        fadeOutQuick(hideSubButton);
+        fadeInContent(hideSubButton);  
+        //Reveal Content 3
+        fadeOutQuick(target); 
+        startRotation()
+    });
+    $('.fadeOutSection2Button').click(function(){
+        var target = $(this).data('target');
+        //Reveal Header
+        const revealHeader = document.querySelectorAll('h3');
+        fadeInContent(revealHeader);
+        //Reveal Main Descrip
+        const revealHomeDescrip = document.querySelectorAll('.mainDescrip');
+        fadeInContent(revealHomeDescrip);
+        //Fade In and Out SubButtons
+        const hideSubButton = document.querySelectorAll('.sectionsButton');
+        fadeOutQuick(hideSubButton);
+        fadeInContent(hideSubButton);  
+        //Reveal Content 2
+        fadeOutQuick(target);
+        startRotation()  
+    });
+    $('.fadeOutSection3Button').click(function(){
+        var target = $(this).data('target');
+        //Reveal Header
+        const revealHeader = document.querySelectorAll('h3');
+        fadeInContent(revealHeader);
+        //Reveal Main Descrip
+        const revealHomeDescrip = document.querySelectorAll('.mainDescrip');
+        fadeInContent(revealHomeDescrip);
+        //Fade In and Out SubButtons
+        const hideSubButton = document.querySelectorAll('.sectionsButton');
+        fadeOutQuick(hideSubButton);
+        fadeInContent(hideSubButton);  
+        //Hide Content 3
+        fadeOutQuick(target);
+        startRotation() 
+    });
+});
+
+</script>
+    
+</body>
+</html>

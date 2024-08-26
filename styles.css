@@ -1,0 +1,470 @@
+/* LAYOUT STYLES  */
+/* Overall container */
+.groupContainer {
+    margin: auto;
+    max-width: 90%;
+    height: 95%;
+    max-height: fit-content;
+    padding: 20px 20px;
+    /* border: 0.3vw solid black; */
+  }
+  /* Title container */
+  .header {
+    font-family: 'Montserrat';
+    font-size: calc(1.00vw + 1.00vh);
+    margin: auto;
+    padding: 5px 5px;
+    text-align: center;
+    /* border: 0.3vw solid black; */
+  }
+  * {
+    box-sizing: border-box;
+  }
+  /* Create equal columns that floats next to each other */
+  .column {
+    float: left;
+    justify-content: center; 
+    align-content: center;
+    width: 49%;
+    margin: auto;
+    padding: 5px 5px;
+    /* border: 0.3vw solid black; */
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    float: none;
+  }
+  
+  /*<-------------------------------------------------->*/
+  /* STYLES FOR BUTTONS & CONTENT */
+  .title {
+    text-align: center;
+    vertical-align: text-top;
+    max-width: 100%;
+    font-family: 'Montserrat';
+    font-size: calc(1.20vw + 1.20vh);
+  }
+  /*Style for home menu */
+  .menuOptions {
+    display: block;
+    flex-direction: column;
+    align-self: stretch;
+    align-items: center;
+    font-size: calc(1.25vw + 1.25vh);
+    color: #002e5d;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px auto 0;
+    font-family: 'Montserrat';
+  }
+  .lineDivider {
+    border-color: rgba(0, 46, 93, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #002e5d;
+    align-self: stretch;
+    margin: 5px 5px;
+    height: 1px;
+  }
+  /* Button container for menu options */
+  .buttonContainer {
+    margin: auto;
+    margin-top: 10%;
+    float: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: fit-content;
+    padding: 5px 5px;
+    /* border: 0.2vw solid black; */
+  }
+  
+  /* Button styles */
+  .btn-group button {
+    background-color: white; 
+    border: 0px;
+    border-radius: 12px;
+    font-family: 'Montserrat';
+    padding: 10px 10px; 
+    margin: auto;
+    cursor: pointer; /* Pointer/hand icon */
+    width: fit-content; 
+    display: block; /* Make the buttons appear below each other */
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-group-2 button {
+    background-color: white; 
+    border: 0px;
+    border-radius: 12px;
+    font-size: calc(0.70vw + 0.70vh);
+    font-family: 'Montserrat';
+    padding: 5px 5px;
+    margin: 6px 6px; 
+    cursor: pointer; /* Pointer/hand icon */
+    transition: 0.5s;
+    float: left; /* Make the buttons appear next to each other */
+    width: 30.3%;
+  }
+  
+  /* Button Container 2 styles */
+  .btn-group-2 {
+    margin: auto;
+    width: 100%;
+    display: inline-block; 
+    position: relative;
+    transition: 0.5s;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  /* Add a background color on hover for any button */
+  .btn-group button:hover {
+    background-color: #6E7CA0;
+  }
+  .btn-group::before {
+    content:"";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background:  #6E7CA0;
+    z-index: -1;
+    transition: 0.5s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+  }
+  
+  .backButton {
+    color: black; 
+    font-size: calc(0.70vw + 0.70vh);
+    border-radius: 12px;
+    margin: auto;
+  } 
+  
+  /* Main Content Style */
+  .content {
+    display: none;
+    padding: 10px 10px;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-size: calc(0.90vw + 0.90vh);
+    max-width: 100%;
+    margin-top: -10%;
+  }
+  .mainDescrip {
+    font-family: 'Montserrat';
+    font-size: calc(0.90vw + 0.90vh);
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  /* Sub Content Style */
+  .content1, .content2, .content3{
+    display: none;
+    margin-top: 5px;
+    text-align: left;
+    font-family: 'Montserrat';
+  }
+  /* Sub Content styles for Title, header, and bulletpoints */
+  .title1 {
+    text-align: center;
+    vertical-align: text-top;
+    max-width: 100%;
+    font-family: 'Montserrat';
+    font-size: calc(1.20vw + 1.20vh);
+  }
+  .header1 {
+    vertical-align: text-top;
+    max-width: 100%;
+    font-family: 'Montserrat';
+    font-size: calc(1.10vw + 1.10vh);
+    margin-left: 15%;
+  }
+  .listItems {
+    font-family: 'Montserrat';
+    font-size: calc(0.90vw + 0.90vh);
+    margin-left: 15%;
+  }
+  
+  /*<-------------------------------------------------->*/
+  /* CIRCLE STYLES */
+  .overallContainer{
+    width: 98%;
+    height: 98%;
+    overflow: visible;
+    margin: auto;
+  }
+  .modelContainer {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 400px;
+    height: 400px;
+    overflow: visible;
+    border: black;
+    transform: rotate(45deg);
+  }
+  .center-circle {
+    position: absolute;
+    width: 185px; /* Adjust the size as needed */
+    height: 185px; /* Adjust the size as needed */
+    border-radius: 50%;
+    background-color: white; /* Adjust the color as needed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3; /* Ensure it overlays on top */
+  }
+  .center-text {
+    font-family: 'Montserrat';
+    position: relative;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333; /* Adjust text color as needed */
+    transform: rotate(-45deg);
+  }
+  
+  .principle-circle {
+    position: absolute;
+    width: 275px; /* Adjust the size as needed */
+    height: 275px; /* Adjust the size as needed */
+    border-radius: 50%;
+    background-color: #ffeeb8; /* Adjust the color as needed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    z-index: 2; /* Ensure it overlays on top */
+  }
+  
+  .quadrant {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    border-radius: 0 100% 100% 0;
+    cursor: pointer;
+    transition: transform 0.3s;
+    transform-origin: center;
+    z-index: 1; /* Ensure it stays below the overlay circle */
+    font-size: 24px;
+    color: white;
+  }
+  /* Assigning color and position to each quadrant */
+  .top {
+    top: 0;
+    left: 0;
+    border-radius: 100% 0 0 0;
+    background-color: #6E7CA0;
+  }
+  .right {
+    top: 0;
+    right: 0;
+    border-radius: 0 100% 0 0;
+    background-color: #002E5D;
+  }
+  .left {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 0 100%;
+    background-color: #002E5D;
+  }
+  .bottom {
+    bottom: 0;
+    right: 0;
+    border-radius: 0 0 100% 0;
+    background-color: #6E7CA0;
+  }
+  
+  /* Text for 4 quadrants */
+  .text {
+    font-family: 'Montserrat';
+    transform: rotate(-45deg); /*Counteract the container rotation */
+    pointer-events: none; /* Prevent text from interfering with clicks */
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .top .text {
+    top: 10%;
+    left: 50%;
+  }
+  .right .text {
+    top: 50%;
+    right: 10%;
+    font-size: 18px;
+    transform: translate(0%, 0%) rotate(45deg);
+  }
+  .left .text {
+    bottom: 50%;
+    left: 10%;
+    font-size: 20px;
+    transform: translate(0%, 0%) rotate(-135deg);
+  }
+  .bottom .text {
+    bottom: 10%;
+    right: 50%;
+    padding-top: 90px;
+  } 
+  
+  /* Rotating Text Styles */
+  #rotatingText {
+    animation-name: rotate-circle;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: transform 2s ease-in-out;
+    animation: rotate-circle 25s linear infinite;
+  }
+  @keyframes rotate-circle {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Centers text in the center of model circle */
+  .main {
+    align-items: center;
+    justify-items: center;
+  }
+  
+  /* Modifications for flipping circular text */
+  .text1 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 9px;
+    letter-spacing: 2.1px;
+    text-orientation: upright;
+  }
+  .text2 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 9px;
+    letter-spacing: 3.1px;
+    text-orientation: upright;
+  }
+  
+  /* Move quadrants when button is pressed */
+  .quadrant-home {
+    --tx: 0px;
+    --ty: 0px;
+    transform: translateX(var(--tx, --tx)) translateY(var(--ty, --ty)) scale(1.00);
+    z-index: 0; 
+  } 
+  .quadrant-move-q1 {
+    --tx: -25px;
+    --ty: -25px;
+    transform: translateX(var(--tx, --tx)) translateY(var(--ty, --ty)) scale(1.25);
+    z-index: 0; 
+  } 
+  .quadrant-move-q2 {
+    --tx: 25px;
+    --ty: -25px;
+    transform: translateX(var(--tx, --tx)) translateY(var(--ty, --ty)) scale(1.25);
+    z-index: 0; 
+  } 
+  .quadrant-move-q3 {
+    --tx: 25px;
+    --ty: 25px;
+    transform: translateX(var(--tx, --tx)) translateY(var(--ty, --ty)) scale(1.25);
+    z-index: 0; 
+  } 
+  .quadrant-move-q4 {
+    --tx: -25px;
+    --ty: 25px;
+    transform: translateX(var(--tx, --tx)) translateY(var(--ty, --ty)) scale(1.25);
+    z-index: 0; 
+  } 
+
+  /* On screens that are 1200px wide or more, make the columns sit next to each other */
+  @media screen and (min-width: 1200px) {
+    .column {
+      width: 50%;
+      margin: auto;
+    }
+    .overallContainer{
+      padding-top: 20px;
+    }
+  }
+  /* On screens that are 1200px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 1200px) and (min-width: 525px) {
+    .column {
+      width: 99%;
+      margin: auto;
+      margin-top: 20px;
+    }
+    .overallContainer{
+      padding-top: 20px;
+    }
+  }
+  /* On screens that are 525px wide or less, adjust for mobile screen */
+  @media screen and (max-width: 525px) {
+    /* EDIT GENERAL CONTAINER SIZES */
+    .groupContainer {
+      margin: auto;
+      max-width: 99%;
+      padding: 5px;
+      float: inline-start; 
+    }
+    .column {
+      height: fit-content;
+      width: 99%;
+      margin: auto;
+      margin-top: -15%;
+    }
+    .overallContainer {
+      transform: scale(0.7); 
+      float: inline-start; 
+      justify-content: center;
+    }
+    .buttonContainer {
+      margin-top: none;
+      padding: none;
+      float: center;
+    }
+
+    /* EDIT ALL TEXT SIZE */
+    .title {
+      font-size: calc(1.85vw + 1.85vh);
+    }
+    .title1 {
+      font-size: calc(1.55vw + 1.55vh);
+    }
+    .mainDescrip, .header1, .listItems, .backButton{
+      font-size: calc(1.35vw + 1.35vh);
+    }
+    .backButton, .btn-group-2 button {
+      font-size: calc(1.00vw + 1.00vh);
+    }
+    .content {
+      margin: auto;
+      justify-content: center;
+    }
+
+    /* Button Container 2 styles */
+    .btn-group-2 {
+      display: flex;  /* Use flexbox for alignment */
+      justify-content: space-between;  /* Distribute space evenly between buttons */
+      align-items: center;
+      width: 100%; /* Ensure the container takes full width */
+      margin: auto;
+    }
+    /* Button styles */
+    .btn-group-2 button {
+      font-family: 'Montserrat';
+      padding: 5px 5px;
+      margin: 6px;  /* Add some margin for spacing */
+      max-width: 29%; /* Ensure each button does not exceed 30% of the container width */
+      text-align: center;
+    }
+  }
